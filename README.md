@@ -1,6 +1,7 @@
 # manx
 
-https://ryunosuke0922.netlify.com/
+https://ryu0922-htmlsample.netlify.com
+
 
 ## Tec
 
