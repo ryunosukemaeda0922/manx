@@ -9,6 +9,12 @@ import Main from "./components/Main.vue";
 
 export default {
   name: "App",
+  mounted: function() {
+    document.title = "Ryunosuke Portfolio";
+    document
+      .querySelector("meta[property='description']")
+      .setAttribute("content", "Ryunosuke Portfolio");
+  },
   components: {
     Main
   }

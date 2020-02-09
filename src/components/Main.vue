@@ -3,10 +3,10 @@
     <header>
       <nav class="header-link">
         <div class="header-right">
-          <a href="#profile">Profile</a>
-          <a href="#skill">Skill</a>
-          <a href="#works">Works</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" v-smooth-scroll>About</a>
+          <a href="#skill" v-smooth-scroll>Skill</a>
+          <a href="#works" v-smooth-scroll>Works</a>
+          <a href="#contact" v-smooth-scroll>Contact</a>
         </div>
       </nav>
     </header>
