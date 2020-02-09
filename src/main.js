@@ -9,6 +9,9 @@ Vue.use(BootstrapVue);
 import vueSmoothScroll from "vue-smooth-scroll";
 Vue.use(vueSmoothScroll);
 
+import VueObserveVisibility from "vue-observe-visibility";
+Vue.use(VueObserveVisibility);
+
 Vue.config.productionTip = false;
 
 new Vue({

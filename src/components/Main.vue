@@ -15,7 +15,7 @@
       <div class="top-wrapper">
         <div class="header-name header-name-color">
           <h1>
-            <span>ryunosuke0922</span>
+            <span>Ryunosuke Maeda's portfolio</span>
           </h1>
         </div>
       </div>
@@ -24,38 +24,37 @@
     <section id="about" name="about">
       <div class="about">
         <div class="container">
-          <h3>ABOUT ME</h3>
-          <p class="centered">
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-          </p>
+          <h2>ABOUT ME</h2>
 
-          <img src="../assets/icon.jpg" />
-          <p>
-            前田 龍之介 Maeda Ryunosuke
-            <br />東京でWebエンジニアをしています。Web系にきて1年ちょっとになります。
-            <br />遊技機の組み込み→SE→スマホアプリ開発→Web系と色々やっていました。
-            <br />ジョブホッパー気味。
-            <br />
-            <br />五匹の猫と暮らす、猫好き。
-          </p>
-          <p>
-            フリーランス Web/スマートフォンアプリ開発
-            <span>2018-08</span>
-          </p>
-          <p>
-            システム開発会社 プログラマー スマートフォンアプリ開発
-            <span>2018-01 - 2018-07</span>
-          </p>
-          <p>
-            医療機器メーカー プログラマー
-            <span>2017-10 - 2017-12</span>
-          </p>
-          <p>
-            ポリゴンマジック株式会社 プログラマー 遊技機の液晶開発
-            <span>2015-04 - 2017-09</span>
-          </p>
+          <div class="row">
+            <div class="col-lg-4 about-left">
+              <img src="../assets/icon.jpg" />
+              <p class="name">Ryunosuke Maeda</p>
+            </div>
+            <div class="col-lg-8 about-right">
+              <h3>エンジニア & 猫好き</h3>
+              <p>
+                Ryunosuke Maeda
+                <a href="https://twitter.com/ryunosuke0922">@ryunosuke0922</a>
+                <br />東京でWebエンジニアをしています。Web系にきて1年ちょっとになります。
+                <br />遊技機の組み込み→SE→スマホアプリ開発→Web系と色々やっていました。
+                <br />ジョブホッパー気味。
+                <br />
+              </p>
+              <p style="margin-top:80px">五匹の猫と暮らしています</p>
+              <div
+                class="row fade"
+                v-observe-visibility="visibilityChangedCat"
+                v-bind:class="{ active: this.isVisible_Cat }"
+              >
+                <img src="../assets/cat1.png" />
+                <img src="../assets/cat2.png" />
+                <img src="../assets/cat3.png" />
+                <img src="../assets/cat4.png" />
+                <img src="../assets/cat5.png" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -65,28 +64,31 @@
     <section id="skill" name="skill">
       <div class="skill">
         <div class="container">
-          <h3>SKILL</h3>
-          <p class="centered">
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-          </p>
-
-          <div>
-            <h4>業務で使用した言語 / Framework</h4>
-            <p>
-              HTML/CSS | C | C++ | Java | PHP | JavaScript | Objective-C | Ruby
-              | VB.NET
-            </p>
-            <p>
-              Laravel | ReactNative | Ruby on Rails | jQuery | Vue.js | .NET
-              Framerowk
-            </p>
-          </div>
-          <div>
-            <h4>業務外(学生時代など)</h4>
-            <p>C# | C | C++ | Python</p>
-            <p>Unity | DirectX</p>
+          <h2>SKILL</h2>
+          <div
+            class="row fade"
+            v-observe-visibility="visibilityChangedSkill"
+            v-bind:class="{ active: this.isVisible_skill }"
+          >
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+              <p>
+                HTML/CSS
+                <br />C/C++
+                <br />PHP
+                <br />JavaScript
+                <br />Objective-C
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <p>
+                Laravel
+                <br />ReactNative
+                <br />Vue.js
+                <br />JavaScript
+              </p>
+            </div>
+            <div class="col-lg-2"></div>
           </div>
         </div>
       </div>
@@ -95,48 +97,51 @@
     <section id="works" name="works">
       <div class="works">
         <div class="container">
-          <h3>WORKS</h3>
-          <p class="centered">
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-          </p>
+          <h2>WORKS</h2>
 
-          <div>
-            <h4>フリーランス時代</h4>
-            <p>
-              Laravel | PHP
-              <br />業務改善Webアプリケーション
-              <span>3ヶ月</span>
-            </p>
-            <p>
-              iOS / Android | ReactNative | JavaScript
-              <br />イベントアプリ
-              <span>半年</span>
-            </p>
-            <p>
-              iOS / Android | ReactNative | JavaScript
-              <br />イベントアプリ
-              <span>1年</span>
-            </p>
-          </div>
-          <div>
-            <h4>会社員時代</h4>
-            <p>
-              iOS / Android | Objective-C / Java / C/C++
-              <br />パチンコ、パチスロのネイティブアプリ開発
-              <span>8ヶ月</span>
-            </p>
-            <p>
-              アニメ版権 | 独自基盤 | C/C++
-              <br />遊技機の液晶開発
-              <span>1年半</span>
-            </p>
-            <p>
-              オリジナル版権 | 独自基盤 | C/C++
-              <br />遊技機の液晶開発
-              <span>1年半</span>
-            </p>
+          <div
+            class="row fade"
+            v-observe-visibility="visibilityChangedWork"
+            v-bind:class="{ active: this.isVisible_work }"
+          >
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+              <h3>現職</h3>
+              <p>
+                Laravel | PHP
+                <br />業務改善Webアプリケーション
+                <span>3ヶ月</span>
+              </p>
+              <p>
+                iOS / Android | ReactNative | JavaScript
+                <br />イベントアプリ
+                <span>半年</span>
+              </p>
+              <p>
+                iOS / Android | ReactNative | JavaScript
+                <br />イベントアプリ
+                <span>1年</span>
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <h3>前職</h3>
+              <p>
+                iOS / Android | Objective-C / Java / C/C++
+                <br />パチンコ、パチスロのネイティブアプリ開発
+                <span>8ヶ月</span>
+              </p>
+              <p>
+                アニメ版権 | 独自基盤 | C/C++
+                <br />遊技機の液晶開発
+                <span>1年半</span>
+              </p>
+              <p>
+                オリジナル版権 | 独自基盤 | C/C++
+                <br />遊技機の液晶開発
+                <span>1年半</span>
+              </p>
+            </div>
+            <div class="col-lg-2"></div>
           </div>
         </div>
       </div>
@@ -147,21 +152,12 @@
     <section id="contact" name="contact">
       <div class="contact">
         <div class="container">
-          <h3>CONTACT</h3>
-          <p class="centered">
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-            <i class="icon icon-circle"></i>
-          </p>
+          <h2>CONTACT</h2>
 
           <div>
             <a href="https://twitter.com/ryunosuke0922">
-              <img src="../assets/icon.jpg" />
-            </a>
-            <a href="https://twitter.com/ryunosuke0922">
               <p>Twitter</p>
             </a>
-
             <a href="https://qiita.com/ryunosuke0922">
               <p>Qiita</p>
             </a>
@@ -186,7 +182,25 @@
 
 <script>
 export default {
-  name: "Main"
+  name: "Main",
+  data: function() {
+    return {
+      isVisible_Cat: false,
+      isVisible_skill: false,
+      isVisible_work: false
+    };
+  },
+  methods: {
+    visibilityChangedCat(isVisible) {
+      this.isVisible_Cat = isVisible;
+    },
+    visibilityChangedSkill(isVisible) {
+      this.isVisible_skill = isVisible;
+    },
+    visibilityChangedWork(isVisible) {
+      this.isVisible_work = isVisible;
+    }
+  }
 };
 </script>
 
@@ -201,9 +215,13 @@ h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   color: #333;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 p {
+  font-weight: lighter;
+  letter-spacing: 2px;
   line-height: 28px;
   margin-bottom: 25px;
 }
@@ -364,32 +382,53 @@ header .header-link .header-right {
 }
 
 .about {
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 40px;
-  text-align: center;
   background-color: #f2f2f2;
 }
 
-.about img {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
+.about h2 {
+  margin: 100px auto;
+  color: #1a1a1a;
+  font-size: 40px;
+  line-height: 1.45;
+  font-weight: 300;
+  text-align: center;
 }
 
-.about h3 {
+.about-left {
+  text-align: center;
+}
+
+.about-left img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.about-left .name {
+  font-size: 22px;
+  font-weight: lighter;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.about-right img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 8px 8px 8px;
+}
+
+.about-right h3 {
   color: #1a1a1a;
   font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  line-height: 1.45;
+  font-weight: 300;
 }
 
-.about p {
+.about-right p {
   color: #1a1a1a;
   font-size: 16px;
-}
-
-.about p span {
-  font-size: 14px;
 }
 
 .about-low {
@@ -403,28 +442,19 @@ header .header-link .header-right {
   padding-bottom: 70px;
 }
 
-.skill h3 {
+.skill h2 {
+  margin: 100px auto;
   color: #1a1a1a;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 40px;
+  line-height: 1.45;
+  font-weight: 300;
   text-align: center;
 }
 
-.skill h4 {
-  color: #1a1a1a;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
-}
-
 .skill p {
+  text-align: center;
   color: #1a1a1a;
   font-size: 16px;
-}
-
-.skill p span {
-  font-size: 14px;
 }
 
 .works {
@@ -433,19 +463,20 @@ header .header-link .header-right {
   background-color: white;
 }
 
-.works h3 {
+.works h2 {
+  margin: 100px auto;
   color: #1a1a1a;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 40px;
+  line-height: 1.45;
+  font-weight: 300;
   text-align: center;
 }
 
-.works h4 {
+.works h3 {
   color: #1a1a1a;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
+  font-size: 28px;
+  line-height: 1.45;
+  font-weight: 300;
 }
 
 .works p {
@@ -454,7 +485,7 @@ header .header-link .header-right {
 }
 
 .works p span {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .contact-up {
@@ -466,14 +497,17 @@ header .header-link .header-right {
 .contact {
   background: #f2f2f2;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 170px;
   text-align: center;
 }
 
-.contact img {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
+.contact h2 {
+  margin: 100px auto;
+  color: #1a1a1a;
+  font-size: 40px;
+  line-height: 1.45;
+  font-weight: 300;
+  text-align: center;
 }
 
 #copyrights {
@@ -485,5 +519,15 @@ header .header-link .header-right {
 
 #copyrights p {
   margin-bottom: 5px;
+}
+
+.fade {
+  opacity: 0 !important;
+  transform: translate(0, 30px) !important;
+  transition: all 1000ms !important;
+}
+.active {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
 }
 </style>

@@ -12,6 +12,7 @@
     "bootstrap-vue": "^2.4.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
+    "vue-observe-visibility": "^0.4.6",
     "vue-smooth-scroll": "^1.0.13"
   },
   "devDependencies": {
